@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins'
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: url('http://unsplash.it/1200x800') center center no-repeat;
+  
+  &:before {
+    content: '';
+	position:fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#fcfeff,#cfad81);
+	opacity: .6; 
+  z-index: -1;
+  }
+}
+
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('http://unsplash.it/1200x800') center center no-repeat;
+  background-size: cover;
+  
+  &:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+	opacity: .6; 
+  }
+}
+
+body {
+  height: 100vh;
+  background-color: url('http://unsplash.it/1200x800') center center no-repeat;
+}
+
+/* The Receipt */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins'
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 40px 0;
+}
+
+/* The Receipt */
+.receipt {
+    width: 360px;
+    background: white;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+/* Heading */
+.name {
+  text-transform: uppercase;
+  text-align: center;
+  color: #9c8f7f;
+  letter-spacing: 10px;
+  font-size: 1.8em;
+  margin-top: 10px
+}
+
+/* Big thank */
+.greeting {
+  font-size: 21px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #020303;
+  margin: 35px 0;
+  letter-spacing: 1.2px
+}
+
+/* Order info */
+.order p {
+  font-size: 13px;
+  color: #aaa;
+  padding-left: 10px;
+  letter-spacing: .7px
+}
+
+/* Our line */
+hr {
+  border: .7px solid #ddd;
+  margin: 15px 0;
+}
+
+/* Order details */
+.details {
+  padding-left: 10px;
+  margin-bottom: 35px;
+  overflow: hidden
+}
+
+.details h3 {
+  font-weight: 400;
+  color: #020303;
+  font-size: 1.5em;
+  margin-bottom: 15px
+}
+
+/* Image and the info of the order */
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.product img {
+  width: 65px;
+  float: left
+}
+
+.product-info {
+    display: flex;
+    gap: 12px;
+    flex: 1;
+}
+
+.product .info h4 {
+  color: #020303;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 10px
+}
+
+.product .info p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Net price */
+.details > p {
+  color: #020303;
+  margin-top: 25px;
+  font-size: 15px
+}
+
+/* Total price */
+.totalprice p {
+  padding-left: 10px
+}
+
+.totalprice .sub,
+.totalprice .del {
+  font-size: 13px;
+  color: #aaa
+}
+
+.totalprice span {
+  float: right;
+  margin-right: 17px
+}
+
+.totalprice .tot {
+  color: #020303;
+  font-size: 15px
+}
+
+/* Footer */
+footer {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 135px; /* You can make it with position try it */
+  color: #aaa
+}
+
+/* Heading */
+.name {
+  text-transform: uppercase;
+  text-align: center;
+  color: #9c8f7f;
+  letter-spacing: 10px;
+  font-size: 1.8em;
+  margin-top: 10px
+}
+
+/* Big thank */
+.greeting {
+  font-size: 21px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #020303;
+  margin: 35px 0;
+  letter-spacing: 1.2px
+}
+
+/* Order info */
+.order p {
+  font-size: 13px;
+  color: #aaa;
+  padding-left: 10px;
+  letter-spacing: .7px
+}
+
+/* Our line */
+hr {
+  border: .7px solid #ddd;
+  margin: 15px 0;
+}
+
+/* Order details */
+.details {
+  padding-left: 10px;
+  margin-bottom: 35px;
+  overflow: hidden
+}
+
+.details h3 {
+  font-weight: 400;
+  color: #9c8f7f;
+  font-size: 1.5em;
+  margin-bottom: 15px
+}
+
+/* Image and the info of the order */
+.product {
+  float: left;
+  width: 83%
+}
+
+.product img {
+  width: 65px;
+  float: left
+}
+
+.product .info {
+  float: left;
+  margin-left: 15px
+}
+
+.product .info h4 {
+  color: #020303;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 10px
+}
+
+.product .info p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Net price */
+.details > p {
+  color: #020303;
+  margin-top: 25px;
+  font-size: 15px
+}
+
+/* Total price */
+.totalprice p {
+  padding-left: 10px
+}
+
+.totalprice .sub,
+.totalprice .del {
+  font-size: 13px;
+  color: #aaa
+}
+
+.totalprice span {
+  float: right;
+  margin-right: 17px
+}
+
+.totalprice .tot {
+  color: #020303;
+  font-size: 15px
+}
+
+.alias {
+    margin: 35px 0;
+    font-size: 13px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+footer{
+  text-align: center;
+  position: relative;
+
+  /* tamaño normal */
+  font-size: 12px;
+  font-weight: 500;
+
+  /* colores */
+  color: #000000;
+
+  /* espacio */
+  padding: 14px 16px 30px;
+
+  /* brillo */
+  text-shadow:
+    0 0 2px #ffffff,
+    0 0 5px #ffffff,
+    0 0 10px rgba(255, 255, 255, 0.8);
+  animation: text-glow 3s ease-in-out infinite;
+}
+
+@keyframes text-glow {
+  0%,100%{
+    text-shadow:
+      0 0 2px #ffffff,
+      0 0 5px #ffffff,
+      0 0 10px rgba(255,255,255,0.6);
+  }
+
+  50%{
+    text-shadow:
+      0 0 4px #ffffff,
+      0 0 10px #ffffff,
+      0 0 18px rgba(255,255,255,0.9);
+  }
+}
+
